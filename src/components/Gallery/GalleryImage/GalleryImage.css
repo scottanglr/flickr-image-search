@@ -1,0 +1,26 @@
+.GalleryImage-wrapper:hover .GalleryImage-details,
+.GalleryImage-keep-details-open .GalleryImage-details {
+  display: flex;
+}
+
+.GalleryImage-wrapper {
+  min-height: 5.5rem; /*In case the image is so short it can't fit in the details. Only a possible issue for mobile*/
+  align-items: center;
+  display: flex;
+}
+
+.GalleryImage-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 0.75rem;
+  color: white;
+  display: none;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}

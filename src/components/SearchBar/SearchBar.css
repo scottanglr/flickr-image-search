@@ -1,0 +1,50 @@
+.SearchBar-input {
+  z-index: 1;
+}
+
+.SearchBar-focus-line {
+  top: -0.4rem; /*Enough to cover the curved input border*/
+  width: 0;
+  z-index: 0;
+  height: 0.525rem;
+  margin: auto;
+  background: var(--primary);
+  transition: width 0.3s ease;
+  border-radius: 0 0 0.4rem 0.4rem; /*Match input border-radius*/
+}
+
+.SearchBar-input:focus {
+  box-shadow: none;
+}
+
+.SearchBar-input:focus + .SearchBar-focus-line {
+  width: calc(100%);
+}
+
+.SearchBar-icon-wrapper {
+  position: absolute;
+  height: calc(1.5em + 0.75rem + 2px); /*Match height of input*/
+  right: 1rem;
+  top: 0;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+}
+
+.SearchBar-icon-wrapper img {
+  height: 1rem;
+  filter: invert(0.5);
+}
+
+.SearchBar-loading-indicator {
+  animation: spin infinite linear 0.75s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

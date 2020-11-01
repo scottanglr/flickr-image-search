@@ -1,0 +1,20 @@
+.Search-container {
+  max-width: 49rem; /* Allows images to reach their max width of 240 pixels */
+  min-height: 100vh;
+}
+
+.Search-flickr-logo {
+  height: 2rem;
+}
+
+.Search-image-search-heading {
+  font-size: 2.25rem;
+}
+
+@media (max-width: 425px) {
+  .Search-image-search-heading {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1.75rem;
+  }
+}
