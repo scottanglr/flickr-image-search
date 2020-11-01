@@ -12,8 +12,6 @@ Further component testing should be introduced. Tests have been written for all 
 
 If the user scrolls quickly then there is no guarantee that columns will be an equal size. This could be mitigated by ensuring that images are added to the shortest column. However, if the flickr feed was not limited to 20 images then any whitespace would be filled by the component. 
 
-# To run this project take a look at the scripts in the package.json file
-
 ## Available Scripts
 
 In the project directory, you can run:
